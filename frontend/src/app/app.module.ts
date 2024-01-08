@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/partial/header/header.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { RatingModule } from 'ng-starrating';
+import { SearchComponent } from './components/partial/search/search.component';
+import { TagsComponent } from './components/partial/tags/tags.component';
+import { FoodComponent } from './components/pages/food/food.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent, TagsComponent, FoodComponent],
+  imports: [BrowserModule, AppRoutingModule, RatingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
