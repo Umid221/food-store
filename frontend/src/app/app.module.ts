@@ -9,9 +9,12 @@ import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './components/partial/search/search.component';
 import { TagsComponent } from './components/partial/tags/tags.component';
 import { FoodComponent } from './components/pages/food/food.component';
+import { CartComponent } from './components/pages/cart/cart.component';
+import { TitleComponent } from './components/partial/title/title.component';
+import { NotFoundComponent } from './components/partial/not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent, TagsComponent, FoodComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent, TagsComponent, FoodComponent, CartComponent, TitleComponent, NotFoundComponent],
   imports: [BrowserModule, AppRoutingModule, RatingModule],
   providers: [],
   bootstrap: [AppComponent],
