@@ -19,7 +19,9 @@ export class FoodComponent {
   ) {
     activatedRoute.params.subscribe((params) => {
       if (params['foodId']) {
-        this.food = foodService.getFood(params['foodId']);
+        foodService
+          .getFood(params['foodId'])
+          .subscribe((res) => (this.food = res));
       }
     });
   }
